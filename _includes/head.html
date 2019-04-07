@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ page.title }}</title>
+		<link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" >
+		{% seo title=false %}
+        <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+        <link rel="stylesheet" type="text/css" href="{{ "/assets/cookieconsent/cookieconsent.min.css" | relative_url }}" />
+        <script src="{{ "/assets/cookieconsent/cookieconsent.min.js" | relative_url }}"></script>
+        <script>
+            window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                layout: 'policies-layout',
+                layouts: {
+                    'policies-layout': '<div class="policies-layout"  style="margin-right:10px">This website uses cookies to ensure you get the best experience on our website. By using our website you agree on the following <a href="{{ "/cookies-policy" | relative_url }}">Cookie Policy</a>, <a href="{{ "/privacy-policy" | relative_url }}">Privacy Policy</a>, and <a href="{{ "/terms-of-use" | relative_url }}">Terms Of Use</a></div>\{\{compliance\}\}',
+                },
+                palette: {
+                    popup: {
+                    background: "#efefef",
+                    text: "#404040"
+                    },
+                    button: {
+                    background: "#8ec760",
+                    text: "#ffffff"
+                    }
+                },
+                position: "bottom",
+                content: {
+                    message: 'Message!',
+                    dismiss: "Agree"
+                }
+            })});
+            </script>
+	{%- if jekyll.environment == 'production' and site.google_analytics -%}
+		{%- include google-analytics.html -%}
+	{%- endif -%}
+    </head>

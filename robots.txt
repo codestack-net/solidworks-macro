@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /search
+Disallow: /terms-of-use
+Disallow: /privacy-policy
+Disallow: /cookies-policy
+Allow: /
+Sitemap: https://www.solidworksmacro.com/sitemap.xml

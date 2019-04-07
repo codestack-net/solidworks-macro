@@ -1,0 +1,16 @@
+title: 'SOLIDWORKS macro for automation: guides, examples, library'
+description: Beginner friendly guides, code examples and library of VBA and VSTA macros for automation of SOLIDWORKS functionality
+email: codestack.net@gmail.com
+theme: minima
+name: SOLIDWORKS Macro
+markdown: kramdown
+baseurl: /
+permalink: /:title
+
+google_analytics: UA-122106766-1
+    
+plugins:
+  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
