@@ -2,6 +2,7 @@
 layout: master
 title: 'SOLIDWORKS macro for automation: guides, examples, library'
 description: Beginner friendly guides, code examples and library of VBA and VSTA macros for automation of SOLIDWORKS functionality
+image: /solidworks-macro.svg
 lang: en
 permalink: "/"
 ---
