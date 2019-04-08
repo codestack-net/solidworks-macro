@@ -6,6 +6,9 @@ image: /solidworks-macro.svg
 lang: en
 permalink: "/"
 ---
+
+{% include section.html effect="fade-up" content="
+
 # SOLIDWORKS VBA and VSTA Macro Overview
 
 ![SOLIDWORKS Macro](solidworks-macro.svg)
@@ -21,17 +24,29 @@ SOLIDWORKS enables macro creation in 3 popular programming languages:
 
 For more information visit [Macro Types](https://www.codestack.net/solidworks-api/getting-started/macros/types/) page.
 
+" %}
+
+{% include section.html effect="fade-up" content="
+
 ## Visual Basic for Applications
 
 Visual Basic for Applications (VBA) is the most popular language for writing SOLIDWORKS macros. It has a similar syntax to the macro in other applications, such as MS Word, Excel or other CAD Systems. Current version of VBA supported in macros is 7.0.
 
 Follow the [Visual Basic](https://www.codestack.net/visual-basic/) link for detailed tutorials and code examples.
 
+" %}
+
+{% include section.html effect="fade-up" content="
+
 ## Recording Macros
 
 Macro recording is a simplest way to start exploring of SOLIDWORKS macro functions. Majority of commands executed by SOLIDWORKS can be recorded as a macro command. This enables the possibility to explore SOLIDWORKS API calls and parameters.
 
 Both VBA and VSTA macro can be recorded. Follow [Recording Macros](https://www.codestack.net/solidworks-api/getting-started/macros/recording/) article for a detailed guide of recording the macros.
+
+" %}
+
+{% include section.html effect="fade-up" content="
 
 ## Troubleshooting
 
@@ -47,7 +62,15 @@ Follow the [Macros Troubleshooting: Issues And Resolutions](https://www.codestac
 
 and much more...
 
+" %}
+
+{% include section.html effect="fade-up" content="
+
 ## Macro Library
+
+" %}
+
+{% include section.html effect="fade-right" content="
 
 ### Delete All Equations
 
@@ -55,11 +78,19 @@ This macro removes all equations from SOLIDWORKS model.
 
 [Get Macro](https://www.codestack.net/solidworks-api/document/delete-model-equations/)
 
+" %}
+
+{% include section.html effect="fade-left" content="
+
 ### Remove All Colors From Part
 
 Colors can be assigned to multiple entities in the SOLIDWORKS document (component, face, feature, body). And it might be challenging to remove the color from the part. This macro removes all the colors from all levels in SOLIDWORKS part document.
 
 [Get Macro](https://www.codestack.net/solidworks-api/document/appearance/remove-color/)
+
+" %}
+
+{% include section.html effect="fade-right" content="
 
 ### Copy Custom Property From Material To Model
 
@@ -67,11 +98,19 @@ Custom materials is a good way to support additional materials with additional p
 
 [Get Macro](https://www.codestack.net/solidworks-api/document/materials/copy-custom-property/)
 
+" %}
+
+{% include section.html effect="fade-left" content="
+
 ### Suspend Rebuild Operation
 
 This macro allows to enhance SOLIDWORKS performance by temporarily disabling rebuild operations. This is very useful when sequence of operations needs to be performed in the large model and regeneration of each operations decreases the performance.
 
 [Get Macro](https://www.codestack.net/solidworks-api/document/suspend-rebuild/)
+
+" %}
+
+{% include section.html effect="fade-right" content="
 
 ### Break All External References For Components
 
@@ -79,11 +118,19 @@ Macro breaks all external references for the components in the assembly with sin
 
 [Get Macro](https://www.codestack.net/solidworks-api/document/assembly/components/break-external-references/)
 
+" %}
+
+{% include section.html effect="fade-left" content="
+
 ### Move To Folder
 
 This macro provides a single click function to move components selected in the graphics area in new feature folder. This enhances the built-in functionality of SOLIDWORKS allowing the selection of entities in the model view (not only in the feature manager tree).
 
 [Get Macro](https://www.codestack.net/solidworks-api/document/assembly/components/move-to-folder/)
+
+" %}
+
+{% include section.html effect="fade-right" content="
 
 ### Copy File Specific Custom Properties To Configuration Properties
 
@@ -91,11 +138,19 @@ Configuration specific property is a way to override the metadata assigned to a 
 
 [Get Macro](https://www.codestack.net/solidworks-api/data-storage/custom-properties/copy-file-specific-to-configuration/)
 
+" %}
+
+{% include section.html effect="fade-left" content="
+
 ### Animate Configurations
 
 This macro create a motion study animation between the configurations. This macro can be used to animate the sheet metal bending in SOLIDWORKS part.
 
 [Get Macro](https://www.codestack.net/solidworks-api/motion-study/animate-configurations/)
+
+" %}
+
+{% include section.html effect="fade-right" content="
 
 ### Close All Documents Except Active
 
@@ -104,3 +159,5 @@ This macro provides a single click way to close all documents except of the acti
 [Get Macro](https://www.codestack.net/solidworks-api/application/frame/close-all-documents-except-active/)
 
 For more macros visit the [Macro Library](https://www.codestack.net/solidworks-tools/) link.
+
+" %}

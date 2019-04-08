@@ -1,7 +1,9 @@
 ---
 ---
 
-$content-width:    1200px;
-$on-laptop:        1200px;
+$content-width:    800px;
+$on-laptop:        800px;
+$base-font-size:   24px !default;
+$spacing-unit:     50px;
 
 @import "{{ site.theme }}";
