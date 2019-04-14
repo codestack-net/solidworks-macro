@@ -3,7 +3,28 @@
 
 $content-width:    800px;
 $on-laptop:        800px;
-$base-font-size:   20px !default;
-$spacing-unit:     40px;
+$base-font-size:   18px !default;
+$spacing-unit:     36px;
+
+.center-large {
+    width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  };
+
+.center-medium {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  };
+
+.center-small {
+    width: 32px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  };
 
 @import "{{ site.theme }}";

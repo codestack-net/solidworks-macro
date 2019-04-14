@@ -1,0 +1,3 @@
+Macro recording is a simplest way to start exploring of SOLIDWORKS macro functions. Majority of commands executed by SOLIDWORKS can be recorded as a macro command. This enables the possibility to explore SOLIDWORKS API calls and parameters.
+
+Both VBA and VSTA macro can be recorded. Follow [Recording Macros](https://www.codestack.net/solidworks-api/getting-started/macros/recording/) article for a detailed guide of recording the macros.
